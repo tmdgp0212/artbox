@@ -1,0 +1,128 @@
+body {
+  color: #333;
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.material-symbols-outlined {
+  color: #000;
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+}
+header .container {
+  height: 120px;
+}
+header h1.logo {
+  position: absolute;
+  bottom: 25px;
+}
+header h1.logo a {
+  display: block;
+  width: 150px;
+  height: 48px;
+  text-indent: -9999px;
+  background-image: url("./../images/logo_150x72.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header nav {
+  position: absolute;
+  left: 240px;
+  bottom: 25px;
+}
+header nav .gnb {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+header nav .gnb li.li--artbox {
+  background-image: url("./../images/logo_artbox_ssd.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header nav .gnb li.li--artbox a {
+  width: 85px;
+  height: 15px;
+  text-indent: -9999px;
+}
+header nav .gnb li a {
+  display: block;
+  padding: 5px 10px;
+  font-weight: 800;
+  font-size: 18px;
+}
+header .search {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 25px;
+  left: 780px;
+  height: 48px;
+}
+header .search input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0 48px 0 10px;
+  width: 230px;
+  height: 30px;
+  font-size: 14px;
+  border-bottom: 2px solid #000;
+  box-sizing: border-box;
+}
+header .search input::-moz-placeholder {
+  color: #000;
+}
+header .search input:-ms-input-placeholder {
+  color: #000;
+}
+header .search input::placeholder {
+  color: #000;
+}
+header .search .material-symbols-outlined {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+header .sub-menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  height: 48px;
+}
+header .sub-menu li {
+  margin: 0 12px;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background-image: url("./../images/ico_common.png");
+  cursor: pointer;
+}
+header .sub-menu li:nth-child(1) {
+  background-position: -116px -60px;
+}
+header .sub-menu li:nth-child(2) {
+  background-position: -76px -100px;
+}
+header .sub-menu li:nth-child(3) {
+  background-position: -36px -100px;
+}
+
+main {
+  height: 100vh;
+  background-color: pink;
+}/*# sourceMappingURL=style.css.map */
