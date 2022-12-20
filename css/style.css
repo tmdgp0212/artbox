@@ -201,16 +201,19 @@ main .visual .slide_container {
 }
 main .visual .slide_container ul {
   display: grid;
-  grid-template-columns: repeat(5, 480px);
+  grid-template-columns: repeat(7, 480px);
   gap: 30px;
   position: absolute;
+  left: -510px;
   width: 100%;
+  transition: left 0.4s;
 }
 main .visual .slide_container ul li {
   background-size: cover;
   border-radius: 55px;
   transform: translateY(30px);
   filter: brightness(0.6);
+  transition: transform 0.4s;
 }
 main .visual .slide_container ul li.slide_1 {
   background-image: url(./../images/visual_banner1.jpg);
@@ -241,7 +244,7 @@ main .visual .slide_container ul li a .slide__text {
   bottom: 40px;
 }
 main .visual .slide_container ul li a .slide__text h4 {
-  width: 60%;
+  width: 80%;
   margin-bottom: 20px;
   font-size: 38px;
   font-weight: 700;

@@ -227,17 +227,19 @@ main {
   
       ul {
         display: grid;
-        grid-template-columns: repeat(5, 480px);
+        grid-template-columns: repeat(7, 480px);
         gap: 30px;
         position: absolute;
+        left: -510px;
         width: 100%;
-        // left: -0px;
+        transition: left .4s;
   
         li {
           background-size: cover;
           border-radius: 55px;  
           transform: translateY(30px);
           filter: brightness(0.6);
+          transition: transform .4s;
 
           &.slide_1{background-image: url(./../images/visual_banner1.jpg);}
           &.slide_2{background-image: url(./../images/visual_banner2.jpg);}
@@ -264,7 +266,7 @@ main {
               bottom: 40px;
               
               h4 {
-                width: 60%;
+                width: 80%;
                 margin-bottom: 20px;
                 font-size: 38px;
                 font-weight: 700;
