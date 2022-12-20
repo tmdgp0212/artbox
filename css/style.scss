@@ -22,7 +22,7 @@ header {
   top: 0;
   width: 100vw;
   height: 120px;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
   z-index: 10;
 
@@ -140,7 +140,7 @@ header {
 }
 
 main {
-  padding-top: 120px;
+  padding: 120px 0 80px;
 
   section {
     
@@ -202,7 +202,7 @@ main {
             display: block;
             padding: 0 15px;
             font-weight: 800;
-            font-size: 15px;
+            font-size: 16px;
           }
 
           &:hover {
@@ -260,14 +260,14 @@ main {
             .slide__text {
               display: none;
               position: absolute;
-              left: 35px;
-              bottom: 35px;
+              left: 40px;
+              bottom: 40px;
               
               h4 {
-                width: 70%;
+                width: 60%;
                 margin-bottom: 20px;
-                font-size: 36px;
-                font-weight: 600;
+                font-size: 38px;
+                font-weight: 700;
                 line-height: 1.2;
                 word-break: keep-all;
               }
@@ -306,7 +306,7 @@ main {
       span {
         font-weight: 600;
       }
-    }
+    }//.indicator
   }//.visual
 
   .bg_box {
@@ -318,3 +318,11 @@ main {
     z-index: -1;
   }
 }//main
+
+.banner {
+  a {
+   img {
+    border-radius: 15px;
+   }
+  }
+}

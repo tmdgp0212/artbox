@@ -18,7 +18,7 @@ header {
   top: 0;
   width: 100vw;
   height: 120px;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
@@ -127,7 +127,7 @@ header .sub-menu li:nth-child(3) {
 }
 
 main {
-  padding-top: 120px;
+  padding: 120px 0 80px;
 }
 main section h2 {
   width: 180px;
@@ -184,7 +184,7 @@ main section nav ul li a {
   display: block;
   padding: 0 15px;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 16px;
 }
 main section nav ul li:hover a {
   color: rgb(229, 0, 25);
@@ -237,14 +237,14 @@ main .visual .slide_container ul li a {
 main .visual .slide_container ul li a .slide__text {
   display: none;
   position: absolute;
-  left: 35px;
-  bottom: 35px;
+  left: 40px;
+  bottom: 40px;
 }
 main .visual .slide_container ul li a .slide__text h4 {
-  width: 70%;
+  width: 60%;
   margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 38px;
+  font-weight: 700;
   line-height: 1.2;
   word-break: keep-all;
 }
@@ -282,4 +282,8 @@ main .bg_box {
   height: 500px;
   background-color: #FFA58C;
   z-index: -1;
+}
+
+.banner a img {
+  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */
