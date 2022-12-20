@@ -162,6 +162,7 @@ main section .top_btn a:last-child {
 main section nav {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 main section nav ul {
   display: flex;
@@ -187,6 +188,92 @@ main section nav ul li a {
 }
 main section nav ul li:hover a {
   color: rgb(229, 0, 25);
+}
+main .visual {
+  width: 100%;
+}
+main .visual .slide_container {
+  overflow: hidden;
+  position: relative;
+  width: 1500px;
+  height: 410px;
+  margin: 0 auto;
+}
+main .visual .slide_container ul {
+  display: grid;
+  grid-template-columns: repeat(5, 480px);
+  gap: 30px;
+  position: absolute;
+  width: 100%;
+}
+main .visual .slide_container ul li {
+  background-size: cover;
+  border-radius: 55px;
+  transform: translateY(30px);
+  filter: brightness(0.6);
+}
+main .visual .slide_container ul li.slide_1 {
+  background-image: url(./../images/visual_banner1.jpg);
+}
+main .visual .slide_container ul li.slide_2 {
+  background-image: url(./../images/visual_banner2.jpg);
+}
+main .visual .slide_container ul li.slide_3 {
+  background-image: url(./../images/visual_banner3.jpg);
+}
+main .visual .slide_container ul li.slide--active {
+  filter: brightness(1);
+  transform: translateY(0px);
+}
+main .visual .slide_container ul li.slide--active a > .slide__text {
+  display: block;
+}
+main .visual .slide_container ul li a {
+  display: block;
+  position: relative;
+  width: 480px;
+  height: 380px;
+}
+main .visual .slide_container ul li a .slide__text {
+  display: none;
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+}
+main .visual .slide_container ul li a .slide__text h4 {
+  width: 70%;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+main .visual .slide_container ul li a .slide__text p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+main .visual .indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+main .visual .indicator button {
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .visual .indicator span {
+  font-weight: 600;
 }
 main .bg_box {
   position: absolute;

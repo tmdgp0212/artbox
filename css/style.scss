@@ -177,6 +177,7 @@ main {
     nav {
       display: flex;
       justify-content: center;
+      margin-bottom: 60px;
 
       ul {
         display: flex;
@@ -209,10 +210,104 @@ main {
               color: rgb(229,0,25);
             }
           }
-        }
+        }//li
+      }//ul
+    }//nav
+  }//section
+
+  .visual {
+    width: 100%;
+
+    .slide_container {
+      overflow: hidden;
+      position: relative;
+      width: 1500px;
+      height: 410px;
+      margin: 0 auto;
+  
+      ul {
+        display: grid;
+        grid-template-columns: repeat(5, 480px);
+        gap: 30px;
+        position: absolute;
+        width: 100%;
+        // left: -0px;
+  
+        li {
+          background-size: cover;
+          border-radius: 55px;  
+          transform: translateY(30px);
+          filter: brightness(0.6);
+
+          &.slide_1{background-image: url(./../images/visual_banner1.jpg);}
+          &.slide_2{background-image: url(./../images/visual_banner2.jpg);}
+          &.slide_3{background-image: url(./../images/visual_banner3.jpg);}
+          &.slide--active {
+            filter: brightness(1);
+            transform: translateY(0px);
+            
+            a > .slide__text {
+              display: block;
+            }
+          }
+
+          a {
+            display: block;
+            position: relative;
+            width: 480px;
+            height: 380px;
+
+            .slide__text {
+              display: none;
+              position: absolute;
+              left: 35px;
+              bottom: 35px;
+              
+              h4 {
+                width: 70%;
+                margin-bottom: 20px;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 1.2;
+                word-break: keep-all;
+              }
+
+              p {
+                font-size: 22px;
+                line-height: 1.2;
+              }
+            }
+          }
+        }//li
+      }//ul
+    }//.slide_container
+
+    .indicator {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+
+      button {
+        border: none;
+        outline: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      span {
+        font-weight: 600;
       }
     }
-  }
+  }//.visual
 
   .bg_box {
     position: absolute;
@@ -222,4 +317,4 @@ main {
     background-color: #FFA58C;
     z-index: -1;
   }
-}
+}//main
