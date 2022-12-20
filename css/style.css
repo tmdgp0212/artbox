@@ -20,6 +20,7 @@ header {
   height: 120px;
   background-color: rgba(255, 255, 255, 0.92);
   box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 header .container {
   height: 120px;
@@ -62,6 +63,9 @@ header nav .gnb li a {
   padding: 5px 10px;
   font-weight: 800;
   font-size: 18px;
+}
+header nav .gnb li:hover a {
+  color: rgb(229, 0, 25);
 }
 header .search {
   position: absolute;
@@ -123,6 +127,72 @@ header .sub-menu li:nth-child(3) {
 }
 
 main {
-  height: 100vh;
-  background-color: pink;
+  padding-top: 120px;
+}
+main section h2 {
+  width: 180px;
+  height: 36px;
+  margin: 50px auto 30px;
+  text-indent: -9999px;
+  background-image: url(./../images/log_270_54.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main section .top_btn {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+}
+main section .top_btn a {
+  display: block;
+  margin: 0 15px;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  background-image: url(./../images/ico_disp.png);
+}
+main section .top_btn a:first-child {
+  background-position: -32px -116px;
+}
+main section .top_btn a:last-child {
+  background-position: 0 -116px;
+}
+main section nav {
+  display: flex;
+  justify-content: center;
+}
+main section nav ul {
+  display: flex;
+  position: relative;
+  padding: 15px;
+}
+main section nav ul:first-child::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 12px;
+  background-color: #333;
+  content: "";
+}
+main section nav ul li a {
+  display: block;
+  padding: 0 15px;
+  font-weight: 800;
+  font-size: 15px;
+}
+main section nav ul li:hover a {
+  color: rgb(229, 0, 25);
+}
+main .bg_box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background-color: #FFA58C;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
