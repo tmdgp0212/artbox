@@ -1,3 +1,5 @@
+{ /* 슬라이드 */
+
 const slideEl = document.querySelector('.visual>.slide_container>ul');
 const slideItems = slideEl.querySelectorAll('li');
 const slideBtns = document.querySelectorAll('.indicator > .btn');
@@ -6,16 +8,20 @@ const bgBox = document.querySelector('main > .bg_box');
 
 let idx = 1;
 
+// 슬라이드 전환(기본)
 const slideFn = function(){
   slideEl.style.left = `${idx * -510}px`
 
+
+  // 메인슬라이드 카드 active효과 (클래스네임)
   slideItems.forEach(function(item){
     item.classList.remove('slide--active');
   });
 
   slideItems[idx+1].classList.add('slide--active');
 
-  if(idx === 1 || idx === 4) {
+
+  if(idx === 1 || idx === 4) { //슬라이드 배경색 전환효과
     bgBox.style.backgroundColor = '#FFA58C';
   } else if (idx === 2) {
     bgBox.style.backgroundColor = '#028A7C';
@@ -25,6 +31,7 @@ const slideFn = function(){
 
 };
 
+// 자동슬라이드 interval
 let intervalKey = setInterval(function(){
   slideBtns.forEach(function(item){
     if(item.classList.contains('btn--next')){
@@ -33,13 +40,17 @@ let intervalKey = setInterval(function(){
   });
 },3000);
 
+
+
 slideBtns.forEach(function(btn){
   btn.addEventListener('click',function(){
+    
+    //이전버튼
     if(this.classList.contains('btn--prev')){
       
       idx--;
       
-      if(idx === 0) {
+      if(idx === 0) { //0번 카드 active시 자연스럽게 4번카드로 체인지(무한슬라이드)
         slideFn();
         slideItems[4].classList.add('slide--active');
         indicator.textContent = `3/3`
@@ -63,7 +74,7 @@ slideBtns.forEach(function(btn){
 
       idx++;
       
-      if(idx === 4) {
+      if(idx === 4) { //4번 카드 active시 자연스럽게 1번카드로 체인지(무한슬라이드)
         slideFn();
         slideItems[2].classList.add('slide--active');
         indicator.textContent = `1/3`
@@ -100,3 +111,17 @@ slideBtns.forEach(function(btn){
   })
 });
 
+}
+
+const mainWishBtn = document.querySelector('main .container .top_btn a:first-child');
+const liveWishBtn = document.querySelectorAll('.live .container .diary li .item__info .name button');
+
+mainWishBtn.addEventListener('click',function(){
+  this.classList.toggle('clicked');
+});
+
+liveWishBtn.forEach(function(btn){
+  btn.addEventListener('click',function(){
+    this.classList.toggle('clicked');
+  });
+});

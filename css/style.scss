@@ -1,3 +1,5 @@
+// Common Style
+
 @mixin title-font {
   font-size: 38px;
   font-weight: 800;
@@ -25,6 +27,8 @@ body {
   'opsz' 48
 }
 
+
+// Header Section
 header {
   position: fixed;
   top: 0;
@@ -164,6 +168,8 @@ header {
   }
 }
 
+
+//Main Section
 main {
   padding: 120px 0 80px;
 
@@ -196,6 +202,11 @@ main {
 
         &:first-child {background-position: -32px -116px;}
         &:last-child {background-position: 0 -116px;}
+
+        &:first-child:hover,
+        &.clicked{
+          background-position: -64px -116px;
+        }
       }
     }
 
@@ -279,7 +290,7 @@ main {
             }
           }
 
-          &:hover{
+          &.slide--active:hover{
             background-size: 105%;
           }
 
@@ -351,6 +362,8 @@ main {
   }
 }//main
 
+
+//Banner Section
 .banner {
   margin-bottom: 80px;
   a {
@@ -360,6 +373,8 @@ main {
   }
 }
 
+
+// BEST Section
 .best {
 
   .best__title {
@@ -473,6 +488,8 @@ main {
   }//.best__items
 }//.best
 
+
+// Artbox Live Section
 .live {
   position: relative;
   margin-top: 100px;
@@ -561,8 +578,13 @@ main {
               background-image: url(./../images/ico_common.png);
               background-position: -141px -136px;
               cursor: pointer;
+
+              &:hover,
+              &.clicked{
+                background-position: -165px -136px;
+              }
             }
-          }
+          }//.name
           
           .price {
             margin-top: 10px;

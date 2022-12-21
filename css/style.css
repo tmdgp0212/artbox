@@ -175,6 +175,9 @@ main section .top_btn a:first-child {
 main section .top_btn a:last-child {
   background-position: 0 -116px;
 }
+main section .top_btn a:first-child:hover, main section .top_btn a.clicked {
+  background-position: -64px -116px;
+}
 main section nav {
   display: flex;
   justify-content: center;
@@ -248,7 +251,7 @@ main .visual .slide_container ul li.slide--active {
 main .visual .slide_container ul li.slide--active a > .slide__text {
   display: block;
 }
-main .visual .slide_container ul li:hover {
+main .visual .slide_container ul li.slide--active:hover {
   background-size: 105%;
 }
 main .visual .slide_container ul li a {
@@ -538,6 +541,9 @@ main .bg_box {
   background-image: url(./../images/ico_common.png);
   background-position: -141px -136px;
   cursor: pointer;
+}
+.live .container .diary li .item__info .name button:hover, .live .container .diary li .item__info .name button.clicked {
+  background-position: -165px -136px;
 }
 .live .container .diary li .item__info .price {
   margin-top: 10px;
