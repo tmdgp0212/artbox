@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   color: #333;
+  font-family: "LINESeedKR-Bd";
 }
 
 .container {
@@ -162,7 +169,7 @@ main section .top_btn a:last-child {
 main section nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 main section nav ul {
   display: flex;
@@ -206,14 +213,15 @@ main .visual .slide_container ul {
   position: absolute;
   left: -510px;
   width: 100%;
-  transition: left 0.4s;
+  transition: left 0.8s;
 }
 main .visual .slide_container ul li {
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
   border-radius: 55px;
   transform: translateY(30px);
+  transition: transform 0.8s, background-size 0.2s;
   filter: brightness(0.6);
-  transition: transform 0.4s;
 }
 main .visual .slide_container ul li.slide_1 {
   background-image: url(./../images/visual_banner1.jpg);
@@ -230,6 +238,9 @@ main .visual .slide_container ul li.slide--active {
 }
 main .visual .slide_container ul li.slide--active a > .slide__text {
   display: block;
+}
+main .visual .slide_container ul li.slide--active:hover {
+  background-size: 103%;
 }
 main .visual .slide_container ul li a {
   display: block;

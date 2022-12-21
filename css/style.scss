@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: #333;
+  font-family: 'LINESeedKR-Bd';
 }
 
 .container {
@@ -177,7 +185,7 @@ main {
     nav {
       display: flex;
       justify-content: center;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
 
       ul {
         display: flex;
@@ -232,14 +240,15 @@ main {
         position: absolute;
         left: -510px;
         width: 100%;
-        transition: left .4s;
+        transition: left .8s;
   
         li {
-          background-size: cover;
+          background-size: 100%;
+          background-position: center;
           border-radius: 55px;  
           transform: translateY(30px);
+          transition: transform .8s , background-size .2s;
           filter: brightness(0.6);
-          transition: transform .4s;
 
           &.slide_1{background-image: url(./../images/visual_banner1.jpg);}
           &.slide_2{background-image: url(./../images/visual_banner2.jpg);}
@@ -251,7 +260,13 @@ main {
             a > .slide__text {
               display: block;
             }
+
+            &:hover {
+            background-size: 103%;
+            }
           }
+
+         
 
           a {
             display: block;

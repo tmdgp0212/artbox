@@ -2,6 +2,7 @@ const slideEl = document.querySelector('.visual>.slide_container>ul');
 const slideItems = slideEl.querySelectorAll('li');
 const slideBtns = document.querySelectorAll('.indicator > .btn');
 const indicator = document.querySelector('.indicator>span');
+const bgBox = document.querySelector('main > .bg_box');
 
 let idx = 1;
 
@@ -14,7 +15,14 @@ const slideFn = function(){
 
   slideItems[idx+1].classList.add('slide--active');
 
-  console.log(idx)
+  if(idx === 1 || idx === 4) {
+    bgBox.style.backgroundColor = '#FFA58C';
+  } else if (idx === 2) {
+    bgBox.style.backgroundColor = '#028A7C';
+  } else {
+    bgBox.style.backgroundColor = '#BC74D7';
+  }
+
 };
 
 let intervalKey = setInterval(function(){
@@ -42,9 +50,9 @@ slideBtns.forEach(function(btn){
           
           setTimeout(function () {
             idx = 3;
-            slideEl.style.transition = "left .4s";
+            slideEl.style.transition = "left .8s";
           }, 100);
-        }, 400);
+        }, 800);
       } else {
         indicator.textContent = `${idx}/3`
         slideFn();
@@ -66,9 +74,9 @@ slideBtns.forEach(function(btn){
           
           setTimeout(function () {
             idx = 1;
-            slideEl.style.transition = "left .4s";
+            slideEl.style.transition = "left .8s";
           }, 100);
-        }, 400);
+        }, 800);
       } else {
         indicator.textContent = `${idx}/3`
         slideFn();
@@ -91,5 +99,24 @@ slideBtns.forEach(function(btn){
     }
   })
 });
+
+
+
+function solution(denum1, num1, denum2, num2) {
+    
+  let denum = (denum1 * num2) + (denum2 * num1);
+  let num = num1 * num2;
+  
+  let a;
+  let b;
+  
+  for (i = 1; i < 1000; i++) {
+      if(denum % i === 0 && num % i === 0){
+          a = denum / i;
+          b = num / i;
+      } 
+  }
+
+
 
 
