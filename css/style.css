@@ -209,11 +209,12 @@ main .visual .slide_container ul {
   transition: left 0.4s;
 }
 main .visual .slide_container ul li {
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
   border-radius: 55px;
   transform: translateY(30px);
   filter: brightness(0.6);
-  transition: transform 0.4s;
+  transition: transform 0.8s, background-size 0.2s;
 }
 main .visual .slide_container ul li.slide_1 {
   background-image: url(./../images/visual_banner1.jpg);
@@ -230,6 +231,9 @@ main .visual .slide_container ul li.slide--active {
 }
 main .visual .slide_container ul li.slide--active a > .slide__text {
   display: block;
+}
+main .visual .slide_container ul li:hover {
+  background-size: 105%;
 }
 main .visual .slide_container ul li a {
   display: block;

@@ -235,11 +235,12 @@ main {
         transition: left .4s;
   
         li {
-          background-size: cover;
+          background-size: 100%;
+          background-position: center;
           border-radius: 55px;  
           transform: translateY(30px);
           filter: brightness(0.6);
-          transition: transform .4s;
+          transition: transform .8s,  background-size .2s;
 
           &.slide_1{background-image: url(./../images/visual_banner1.jpg);}
           &.slide_2{background-image: url(./../images/visual_banner2.jpg);}
@@ -251,6 +252,10 @@ main {
             a > .slide__text {
               display: block;
             }
+          }
+
+          &:hover{
+            background-size: 105%;
           }
 
           a {
