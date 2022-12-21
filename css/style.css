@@ -558,4 +558,53 @@ main .bg_box {
 .live .container .diary li .item__info .price .price--bold {
   font-size: 20px;
   font-weight: 800;
+}
+
+.recommend {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.recommend ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.recommend ul li:nth-child(1) > a > .frame {
+  background-image: url(./../images/recommend_clean.jpg);
+}
+.recommend ul li:nth-child(2) > a > .frame {
+  background-image: url(./../images/recommend_tumblr.jpg);
+}
+.recommend ul li:nth-child(3) > a > .frame {
+  background-image: url(./../images/recommend_humidifier.jpg);
+}
+.recommend ul li:hover > a > .frame {
+  background-size: 105%;
+}
+.recommend ul li a .frame {
+  width: 400px;
+  height: 240px;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 20px;
+  transition: background-size 0.2s;
+}
+.recommend ul li a h4 {
+  padding: 20px 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+.recommend ul li a .txt {
+  display: flex;
+  padding: 0 10px;
+}
+.recommend ul li a .txt p {
+  flex-grow: 1;
+  color: #444;
+}
+.recommend ul li a .txt span {
+  color: #ED1C24;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -2px;
 }/*# sourceMappingURL=style.css.map */
