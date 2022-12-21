@@ -607,4 +607,154 @@ main .bg_box {
   font-size: 28px;
   font-weight: 800;
   letter-spacing: -2px;
+}
+
+.new .new__title {
+  position: relative;
+}
+.new .new__title h3 {
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  cursor: default;
+  padding: 50px;
+}
+.new .new__title div {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+.new .new__title div a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.new .new__products {
+  display: flex;
+  width: 200%;
+}
+.new .new__products ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.new .new__products ul.page1 > li:nth-child(1) > a {
+  background-image: url(./../images/new_product1.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(2) > a {
+  background-image: url(./../images/new_product2.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(3) > a {
+  background-image: url(./../images/new_product3.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(4) > a {
+  background-image: url(./../images/new_product4.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(5) > a {
+  background-image: url(./../images/new_product5.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(1) > a {
+  background-image: url(./../images/new_product6.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(2) > a {
+  background-image: url(./../images/new_product7.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(3) > a {
+  background-image: url(./../images/new_product8.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(4) > a {
+  background-image: url(./../images/new_product9.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(5) > a {
+  background-image: url(./../images/new_product10.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(1) > a:hover {
+  background-image: url(./../images/new_product_detail1.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(2) > a:hover {
+  background-image: url(./../images/new_product_detail2.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(3) > a:hover {
+  background-image: url(./../images/new_product_detail3.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(4) > a:hover {
+  background-image: url(./../images/new_product_detail4.jpg);
+}
+.new .new__products ul.page1 > li:nth-child(5) > a:hover {
+  background-image: url(./../images/new_product_detail5.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(1) > a:hover {
+  background-image: url(./../images/new_product_detail6.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(2) > a:hover {
+  background-image: url(./../images/new_product_detail7.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(3) > a:hover {
+  background-image: url(./../images/new_product_detail8.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(4) > a:hover {
+  background-image: url(./../images/new_product_detail9.jpg);
+}
+.new .new__products ul.page2 > li:nth-child(5) > a:hover {
+  background-image: url(./../images/new_product_detail10.jpg);
+}
+.new .new__products ul li a {
+  display: block;
+  width: 224px;
+  height: 224px;
+  border-radius: 20px;
+  transition: background-image 0.2s;
+}
+.new .new__products ul li .product__info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.new .new__products ul li .product__info .artbox {
+  font-weight: 600;
+  line-height: 1.5;
+}
+.new .new__products ul li .product__info .name {
+  font-size: 13px;
+  cursor: pointer;
+}
+.new .new__products ul li .product__info .name:hover {
+  text-decoration: underline;
+}
+.new .new__products ul li .product__info .price {
+  margin-top: 15px;
+}
+.new .new__products ul li .product__info .price span {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.new .btns button {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 210px;
+  width: 40px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+.new .btns button.prev {
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+.new .btns button.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+.new .btns button:hover {
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.new .btns button span {
+  color: #ccc;
+  text-align: center;
+  line-height: 36px;
 }/*# sourceMappingURL=style.css.map */
