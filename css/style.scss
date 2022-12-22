@@ -922,21 +922,28 @@ main {
     }
 
     .slide {
+      overflow: hidden;
       position: absolute;
       top: 0;
       bottom: 0;
       left: 400px;
+      width: calc(230px * 12);
       height: 210px;
       margin: auto;
       
       ul {
         display: flex;
+        position: absolute;
+        left: 0;
+        // left: -460px;
+        transition: left .8s;
 
         li {
           overflow: hidden;
           margin-right: 20px;
           border-radius: 20px;
-          opacity: 0.6;
+          opacity: 0.5;
+          transition: opacity .4s;
 
           &:nth-child(1)>a>.item__img{background-image: url(../images/babichon1.jpg);}
           &:nth-child(2)>a>.item__img{background-image: url(../images/babichon2.jpg);}
@@ -997,5 +1004,42 @@ main {
         }//li
       }//ul
     }//.slide
+
+    .btns {
+      display: flex;
+      position: absolute;
+      right: 0px;
+      bottom: 50px;
+
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 12px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        
+        &:hover {border-color: #444;}
+
+        &.prev span {background-position: -152px -107px;}
+        &.next span {background-position: -164px -107px;}
+
+        span {
+          display: block;
+          width: 12px;
+          height: 18px;
+          background-image: url(../images/ico_disp.png);
+          background-repeat: no-repeat;
+
+        }
+      }
+    }
   }//.container
 }//.babichon

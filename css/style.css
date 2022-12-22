@@ -889,21 +889,27 @@ main .bg_box {
   padding-left: 40px;
 }
 .babichon .container .slide {
+  overflow: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 400px;
+  width: 2760px;
   height: 210px;
   margin: auto;
 }
 .babichon .container .slide ul {
   display: flex;
+  position: absolute;
+  left: 0;
+  transition: left 0.8s;
 }
 .babichon .container .slide ul li {
   overflow: hidden;
   margin-right: 20px;
   border-radius: 20px;
-  opacity: 0.6;
+  opacity: 0.5;
+  transition: opacity 0.4s;
 }
 .babichon .container .slide ul li:nth-child(1) > a > .item__img {
   background-image: url(../images/babichon1.jpg);
@@ -978,4 +984,40 @@ main .bg_box {
 }
 .babichon .container .slide ul li a .item__info p span {
   font-weight: 800;
+}
+.babichon .container .btns {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+}
+.babichon .container .btns button {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.babichon .container .btns button:hover {
+  border-color: #444;
+}
+.babichon .container .btns button.prev span {
+  background-position: -152px -107px;
+}
+.babichon .container .btns button.next span {
+  background-position: -164px -107px;
+}
+.babichon .container .btns button span {
+  display: block;
+  width: 12px;
+  height: 18px;
+  background-image: url(../images/ico_disp.png);
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

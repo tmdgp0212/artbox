@@ -130,7 +130,7 @@ slideBtns.forEach(function(btn){
 
 }
 
-{ // New section slide button
+{ // New section slide
 
   const newBtns = document.querySelectorAll('.new > .btns > button');
   const newSlide = document.querySelector('.new > .new__products');
@@ -144,5 +144,50 @@ slideBtns.forEach(function(btn){
       }
     })
   })
+
+}
+
+{ //babichon slide
+  
+  const babiBtns = document.querySelectorAll('.babichon>.container>.btns>button');
+  const babiSlide = document.querySelector('.babichon>.container>.slide>ul');
+  const babiItems = babiSlide.querySelectorAll('li');
+
+  let nowIdx = 4;
+
+  const slideMove = function(){
+    babiSlide.style.left = ` ${-230 * (nowIdx - 4)}px`
+    
+    babiItems[nowIdx - 1].classList.add('active');
+
+    babiItems.forEach(function(item,index){
+
+      if(index + 1 > nowIdx){
+        babiItems[index].classList.remove('active')
+      }
+    });
+  };
+
+  babiBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      
+      if(this.classList.contains('prev')){
+        if(nowIdx > 4) {
+          nowIdx --;
+          slideMove()
+        } else {
+          return;
+        }
+
+      } else {
+        if(nowIdx < 12) {
+          nowIdx ++;
+          slideMove()
+        } else {
+          return;
+        }
+      }
+    });
+  });
 
 }
