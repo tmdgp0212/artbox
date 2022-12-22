@@ -1,4 +1,10 @@
 // Common Style
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 
 @mixin title-font {
   font-size: 40px;
@@ -13,6 +19,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   color: #333;
+  font-family: 'LINESeedKR-Bd';
 }
 
 .container {
