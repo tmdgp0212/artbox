@@ -691,6 +691,7 @@ main {
   .new__products {
     display: flex;
     position: absolute;
+    left: 0;
     width: 200%;
     transition: left .8s;
     
@@ -798,3 +799,104 @@ main {
     }
   }
 }//.new
+
+.hot {
+
+  h3 {
+    @include title-font();
+    margin: 100px 0;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+
+    li {
+      background-color: #f7f7f7;
+      border-radius: 20px;
+
+      &.big {
+        grid-row-end: span 2;
+
+        > a {
+          margin: 60px auto 40px;
+          width: 360px;
+          height: 360px;
+        }
+
+        .item__info {
+          padding: 50px;
+
+          .name {
+            font-size: 28px;
+            font-weight: 600;
+          }
+
+          .price {
+            font-size: 24px;
+
+            span {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1)>a {background-image: url(../images/hot_item1.jpg);}
+      &:nth-child(2)>a {background-image: url(../images/hot_item2.jpg);}
+      &:nth-child(3)>a {background-image: url(../images/hot_item3.jpg);}
+      &:nth-child(4)>a {background-image: url(../images/hot_item4.jpg);}
+      &:nth-child(5)>a {background-image: url(../images/hot_item5.jpg);}
+      &:nth-child(6)>a {background-image: url(../images/hot_item6.jpg);}
+      &:nth-child(7)>a {background-image: url(../images/hot_item7.jpg);}
+
+      > a {
+        display: block;
+        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+      }
+
+      .item__info {
+        padding: 0 20px 20px;
+        font-size: 13px;
+        line-height: 1.5;
+        box-sizing: border-box;
+  
+        .name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .name:hover { 
+          text-decoration: underline;
+          cursor: pointer;
+        }
+  
+        .price {
+          margin-top: 10px;
+  
+          .sale {
+            margin-right: 8px;
+            color: #ED1C24;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -2px;
+          }
+  
+          .price--bold {
+            font-size: 20px;
+            font-weight: 800;
+          }
+        }
+      }
+    }//li
+  }//ul
+}//.hot

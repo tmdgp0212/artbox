@@ -637,6 +637,7 @@ main .bg_box {
 .new .new__products {
   display: flex;
   position: absolute;
+  left: 0;
   width: 200%;
   transition: left 0.8s;
 }
@@ -764,4 +765,103 @@ main .bg_box {
   color: #ccc;
   text-align: center;
   line-height: 36px;
+}
+
+.hot h3 {
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  cursor: default;
+  margin: 100px 0;
+}
+.hot ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+.hot ul li {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
+.hot ul li.big {
+  grid-row-end: span 2;
+}
+.hot ul li.big > a {
+  margin: 60px auto 40px;
+  width: 360px;
+  height: 360px;
+}
+.hot ul li.big .item__info {
+  padding: 50px;
+}
+.hot ul li.big .item__info .name {
+  font-size: 28px;
+  font-weight: 600;
+}
+.hot ul li.big .item__info .price {
+  font-size: 24px;
+}
+.hot ul li.big .item__info .price span {
+  font-size: 32px;
+}
+.hot ul li:nth-child(1) > a {
+  background-image: url(../images/hot_item1.jpg);
+}
+.hot ul li:nth-child(2) > a {
+  background-image: url(../images/hot_item2.jpg);
+}
+.hot ul li:nth-child(3) > a {
+  background-image: url(../images/hot_item3.jpg);
+}
+.hot ul li:nth-child(4) > a {
+  background-image: url(../images/hot_item4.jpg);
+}
+.hot ul li:nth-child(5) > a {
+  background-image: url(../images/hot_item5.jpg);
+}
+.hot ul li:nth-child(6) > a {
+  background-image: url(../images/hot_item6.jpg);
+}
+.hot ul li:nth-child(7) > a {
+  background-image: url(../images/hot_item7.jpg);
+}
+.hot ul li > a {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.hot ul li .item__info {
+  padding: 0 20px 20px;
+  font-size: 13px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.hot ul li .item__info .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hot ul li .item__info .name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hot ul li .item__info .price {
+  margin-top: 10px;
+}
+.hot ul li .item__info .price .sale {
+  margin-right: 8px;
+  color: #ED1C24;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+.hot ul li .item__info .price .price--bold {
+  font-size: 20px;
+  font-weight: 800;
 }/*# sourceMappingURL=style.css.map */
