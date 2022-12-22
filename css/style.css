@@ -1085,4 +1085,163 @@ main .bg_box {
 }
 .etc div.wallpaper div a:nth-child(2) {
   background-image: url(../images/wallpaper_nov.png);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 100px;
+}
+footer > div {
+  border-top: 1px solid #dedede;
+}
+footer .ft__top ul {
+  display: flex;
+}
+footer .ft__top ul li {
+  position: relative;
+  padding: 5px 0;
+}
+footer .ft__top ul li.bold > a {
+  color: #ED1C24;
+  font-size: 14px;
+  font-weight: 800;
+}
+footer .ft__top ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+}
+footer .ft__top ul li a:hover {
+  text-decoration: underline;
+}
+footer .ft__top ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 8px;
+  background-color: #dedede;
+}
+footer .ft__top ul li:last-child::after {
+  display: none;
+}
+footer .ft__btm .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+footer .ft__btm .container .logo {
+  width: 165px;
+  height: 55px;
+  text-indent: -9999px;
+  background-image: url(../images/logo_148x55.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .ft__btm .container .company {
+  padding-right: 80px;
+}
+footer .ft__btm .container .company p {
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+footer .ft__btm .container .company p.artbox {
+  margin-bottom: 5px;
+  color: #000;
+  font-weight: 800;
+}
+footer .ft__btm .container .company .sns {
+  margin: 15px 0 25px;
+}
+footer .ft__btm .container .company .sns button {
+  border: none;
+  background: none;
+  margin-right: 8px;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+  background-image: url(./../images/ico_common.png);
+  cursor: pointer;
+}
+footer .ft__btm .container .company .sns button:nth-child(1) {
+  background-position: 0 -52px;
+}
+footer .ft__btm .container .company .sns button:nth-child(2) {
+  background-position: 0 -88px;
+}
+footer .ft__btm .container .company .sns button:nth-child(3) {
+  background-position: 0 -124px;
+}
+footer .ft__btm .container .company .app {
+  display: flex;
+  align-items: center;
+}
+footer .ft__btm .container .company .app .qr {
+  display: flex;
+}
+footer .ft__btm .container .company .app .qr .scan {
+  margin: 0 20px 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+}
+footer .ft__btm .container .company .app .qr .scan span {
+  display: block;
+  color: #333;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.8;
+}
+footer .ft__btm .container .company .app > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 94px;
+  height: 35px;
+  text-indent: -9999px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+footer .ft__btm .container .company .app > a img {
+  display: block;
+}
+footer .ft__btm .container .company .app .inipay {
+  margin-left: 30px;
+  width: 65px;
+  height: 65px;
+}
+footer .ft__btm .container .company .app .inipay img {
+  width: 100%;
+}
+footer .ft__btm .container .center p {
+  font-weight: 600;
+  line-height: 1.5;
+}
+footer .ft__btm .container .center .title {
+  font-size: 15px;
+  font-weight: 800;
+}
+footer .ft__btm .container .center .number {
+  font-size: 40px;
+  font-weight: 800;
+}
+footer .ft__btm .container .center .btns button {
+  margin: 10px 10px 0 0;
+  padding: 3px 7px;
+  font-size: 13px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+footer .ft__copy {
+  text-align: center;
+  line-height: 100px;
 }/*# sourceMappingURL=style.css.map */
