@@ -326,6 +326,7 @@ main .bg_box {
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   cursor: default;
   padding: 50px;
 }
@@ -473,6 +474,7 @@ main .bg_box {
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   cursor: default;
   margin: 100px 0 60px;
 }
@@ -623,6 +625,7 @@ main .bg_box {
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   cursor: default;
   padding: 50px;
 }
@@ -773,8 +776,9 @@ main .bg_box {
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   cursor: default;
-  margin: 100px 0;
+  margin: 120px 0 60px;
 }
 .hot ul {
   display: grid;
@@ -883,6 +887,7 @@ main .bg_box {
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   cursor: default;
   text-align: left;
   line-height: 3.8;
@@ -1020,4 +1025,64 @@ main .bg_box {
   height: 18px;
   background-image: url(../images/ico_disp.png);
   background-repeat: no-repeat;
+}
+
+.etc {
+  display: flex;
+}
+.etc div {
+  flex-grow: 1;
+}
+.etc div h3 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.5;
+  cursor: default;
+  margin-bottom: 30px;
+}
+.etc div a {
+  display: block;
+  position: relative;
+  height: 514px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.4s;
+}
+.etc div a:hover {
+  background-size: 105%;
+}
+.etc div a span {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  color: #ccc;
+  font-size: 35px;
+  text-align: center;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.etc div.friends > a {
+  width: 620px;
+  background-image: url(../images/friends.jpg);
+}
+.etc div.wallpaper div {
+  display: flex;
+}
+.etc div.wallpaper div a {
+  margin-left: 40px;
+  width: 290px;
+  background-position: center;
+}
+.etc div.wallpaper div a:nth-child(1) {
+  background-image: url(../images/wallpaper_dec.png);
+}
+.etc div.wallpaper div a:nth-child(2) {
+  background-image: url(../images/wallpaper_nov.png);
 }/*# sourceMappingURL=style.css.map */

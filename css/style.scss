@@ -4,6 +4,7 @@
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   cursor: default;
 }
 
@@ -806,7 +807,7 @@ main {
 
   h3 {
     @include title-font();
-    margin: 100px 0;
+    margin: 120px 0 60px;
   }
 
   ul {
@@ -1043,3 +1044,67 @@ main {
     }
   }//.container
 }//.babichon
+
+.etc {
+  display: flex;
+
+  div{
+    flex-grow: 1;
+
+    h3 {
+      @include title-font();
+      margin-bottom: 30px;     
+    }
+
+    a {
+      display: block;
+      position: relative;
+      height: 514px;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      transition: background-size .4s;
+
+      &:hover {
+        background-size: 105%;
+      }
+
+      span {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        color: #ccc;
+        font-size: 35px;
+        text-align: center;
+        line-height: 60px;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 50%;
+      }
+    }
+
+    &.friends > a {
+      width: 620px;
+      background-image: url(../images/friends.jpg);
+    }
+
+    &.wallpaper {
+      
+      div {
+        display: flex;
+
+        a {
+          margin-left: 40px;
+          width: 290px;
+          background-position: center;
+
+          &:nth-child(1){background-image: url(../images/wallpaper_dec.png);}
+          &:nth-child(2){background-image: url(../images/wallpaper_nov.png);}
+        }
+      }
+    }
+  }
+}//.etc
