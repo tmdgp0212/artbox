@@ -175,7 +175,7 @@ main section .top_btn a:first-child {
 main section .top_btn a:last-child {
   background-position: 0 -116px;
 }
-main section .top_btn a:first-child:hover, main section .top_btn a.clicked {
+main section .top_btn a.clicked {
   background-position: -64px -116px;
 }
 main section nav {
@@ -542,7 +542,7 @@ main .bg_box {
   background-position: -141px -136px;
   cursor: pointer;
 }
-.live .container .diary li .item__info .name button:hover, .live .container .diary li .item__info .name button.clicked {
+.live .container .diary li .item__info .name button.clicked {
   background-position: -165px -136px;
 }
 .live .container .diary li .item__info .price {
@@ -609,6 +609,11 @@ main .bg_box {
   letter-spacing: -2px;
 }
 
+/* New section */
+.new {
+  overflow: hidden;
+  height: 480px;
+}
 .new .new__title {
   position: relative;
 }
@@ -631,7 +636,9 @@ main .bg_box {
 }
 .new .new__products {
   display: flex;
+  position: absolute;
   width: 200%;
+  transition: left 0.8s;
 }
 .new .new__products ul {
   display: flex;

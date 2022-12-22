@@ -113,15 +113,36 @@ slideBtns.forEach(function(btn){
 
 }
 
-const mainWishBtn = document.querySelector('main .container .top_btn a:first-child');
-const liveWishBtn = document.querySelectorAll('.live .container .diary li .item__info .name button');
+{ // wish button active
 
-mainWishBtn.addEventListener('click',function(){
-  this.classList.toggle('clicked');
-});
-
-liveWishBtn.forEach(function(btn){
-  btn.addEventListener('click',function(){
+  const mainWishBtn = document.querySelector('main .container .top_btn a:first-child');
+  const liveWishBtn = document.querySelectorAll('.live .container .diary li .item__info .name button');
+  
+  mainWishBtn.addEventListener('click',function(){
     this.classList.toggle('clicked');
   });
-});
+  
+  liveWishBtn.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      this.classList.toggle('clicked');
+    });
+  });
+
+}
+
+{ // New section slide button
+
+  const newBtns = document.querySelectorAll('.new > .btns > button');
+  const newSlide = document.querySelector('.new > .new__products');
+
+  newBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(this.classList.contains('prev')){
+        newSlide.style.left = '0px'
+      } else {
+        newSlide.style.left = '-1280px'
+      }
+    })
+  })
+
+}

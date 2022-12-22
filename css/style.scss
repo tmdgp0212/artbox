@@ -203,7 +203,6 @@ main {
         &:first-child {background-position: -32px -116px;}
         &:last-child {background-position: 0 -116px;}
 
-        &:first-child:hover,
         &.clicked{
           background-position: -64px -116px;
         }
@@ -579,7 +578,6 @@ main {
               background-position: -141px -136px;
               cursor: pointer;
 
-              &:hover,
               &.clicked{
                 background-position: -165px -136px;
               }
@@ -663,8 +661,11 @@ main {
   }//ul
 }//.recommend
 
+
+/* New section */
 .new {
-  // overflow: hidden;
+  overflow: hidden;
+  height: 480px;
 
   .new__title {
     position: relative;
@@ -689,7 +690,9 @@ main {
 
   .new__products {
     display: flex;
+    position: absolute;
     width: 200%;
+    transition: left .8s;
     
     ul {
       display: flex;
