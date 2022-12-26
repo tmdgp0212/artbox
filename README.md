@@ -1,9 +1,8 @@
 # Artbox mall clone
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/189291ca-5df7-46a3-8b21-37b5cc93bab5/deploy-status)](https://app.netlify.com/sites/unique-twilight-e140b7/deploys)
 
 원본페이지 참조 : [Artbox 바로가기](https://www.poom.co.kr/dispctg/initArtboxMain.action)
-
-클론페이지 바로가기 : [Artbox 클론페이지](https://tmdgp0212.github.io/artbox/)
 
 ## 프로젝트 안내
 
