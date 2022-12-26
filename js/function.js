@@ -191,3 +191,11 @@ slideBtns.forEach(function(btn){
   });
 
 }
+
+{ //top버튼
+  const topBtn = document.querySelector("#to_top")
+
+  topBtn.addEventListener('click',function(){
+    window.scrollTo({top: 0, behavior: "smooth"})
+  });
+}

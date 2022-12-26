@@ -1253,7 +1253,7 @@ footer .ft__copy {
   line-height: 100px;
 }
 
-.to_top {
+#to_top {
   position: fixed;
   right: 25px;
   bottom: 25px;
@@ -1262,10 +1262,10 @@ footer .ft__copy {
   z-index: 30;
   transition: background-color 0.2s;
 }
-.to_top:hover {
+#to_top:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-.to_top span {
+#to_top span {
   width: 50px;
   height: 50px;
   color: #fff;
