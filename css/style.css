@@ -1251,4 +1251,25 @@ footer .ft__btm .container .center .btns button {
 footer .ft__copy {
   text-align: center;
   line-height: 100px;
+}
+
+.to_top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  z-index: 30;
+  transition: background-color 0.2s;
+}
+.to_top:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.to_top span {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
