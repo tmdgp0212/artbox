@@ -15,6 +15,8 @@ html, css 및 vanilla javascript를 활용한 아트박스 클론 홈페이지�
 
 작업인원 : 1인
 
+사용언어 : `html`, `CSS`, `SCSS`, `JAVASCRIPT`
+
 
 
 ## 페이지 소개
