@@ -4,7 +4,7 @@
 
 원본페이지 참조 : [Artbox 바로가기](https://www.poom.co.kr/dispctg/initArtboxMain.action)
 
-[DEMO SITE](https://unique-twilight-e140b7.netlify.app)
+데모사이트 : [DEMO](https://unique-twilight-e140b7.netlify.app)
 
 ## 프로젝트 안내
 
